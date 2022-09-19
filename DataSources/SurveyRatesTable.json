@@ -1,0 +1,23 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-03-29T18:53:27.9820000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "summer_rate": "summer_rate",
+      "survey_descrip": "survey_descrip",
+      "survey_id": "survey_id",
+      "survey_item": "survey_item",
+      "winter_rate": "winter_rate"
+    },
+    "DatasetName": "default",
+    "EncodeDataset": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "SurveyRatesTable",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

@@ -1,0 +1,454 @@
+{
+  "132cc622-297c-4dd8-a5b9-80a288bd8735": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sql/connections/0c8b824cacd6442b9450e9a7e5bd8c73",
+    "connectionParameters": {
+      "database": "VeraEstimator",
+      "privacySetting": "None",
+      "server": "PECSQL3SRV"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "windowsAuthentication",
+      "displayName": "SQL Server",
+      "gatewayObjectIdHint": "27553c69-677b-4a5a-b785-36e30f83e242",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/sql-special-train/1.0.1593.2976/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "isOnPremiseConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/0c8b824cacd6442b9450e9a7e5bd8c73"
+    },
+    "datasets": {
+      "default": {
+        "dataSources": {
+          "ATCO_Table": {
+            "tableName": "[dbo].[ATCO_Table]"
+          },
+          "SurveyRatesTable": {
+            "tableName": "[dbo].[SurveyRatesTable]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ATCO_Table",
+      "SurveyRatesTable"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "b38fe9c1-973c-48d0-bd4b-302fc68cd91d"
+    ],
+    "id": "132cc622-297c-4dd8-a5b9-80a288bd8735"
+  },
+  "14dbac59-488f-457a-a845-941f2978f5fc": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sql/connections/010f3d16f1654f4baf895a85b8a11212",
+    "connectionParameters": {
+      "database": "VeraEstimator",
+      "privacySetting": "None",
+      "server": "PECSQL3SRV"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "windowsAuthentication",
+      "displayName": "SQL Server",
+      "gatewayObjectIdHint": "01c40bda-e96c-4e89-b119-2e64b037ab7c",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/sql-special-train/1.0.1593.2976/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "isOnPremiseConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/010f3d16f1654f4baf895a85b8a11212"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "3d619e50-2b89-43ac-a1e2-c20992b2f7f4"
+    ],
+    "id": "14dbac59-488f-457a-a845-941f2978f5fc"
+  },
+  "2caa0ffa-db7f-4415-be82-17822bce97b6": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/0b2bad2f4dd648efb8c982341851a3d2",
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-23.canadacentral.logic.azure.com:443/workflows/faff12adddfc40ff9ef6ed111f3fdaf3/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=X111NbVKD7BpdeD6bJfaQzp9Ddf-GzF_alxzAincmwA",
+      "workflowEndpoint": "/subscriptions/ac07fa44-4742-482d-aa28-c00945932935/resourceGroups/27FA3375BC434DE99C55D12DA0C8875A-3DFD892EA8CB4540AE68536B459FEA18/providers/Microsoft.Logic/workflows/b8eaad53-470d-40c0-affb-7c5f9f28c41d",
+      "workflowName": "b8eaad53-470d-40c0-affb-7c5f9f28c41d",
+      "workflowPath": "/subscriptions/ac07fa44-4742-482d-aa28-c00945932935/resourceGroups/27FA3375BC434DE99C55D12DA0C8875A-3DFD892EA8CB4540AE68536B459FEA18/providers/Microsoft.Logic/workflows/b8eaad53-470d-40c0-affb-7c5f9f28c41d"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9b8b44b9-10ce-4557-94a5-df8fb9aef13a": {
+          "value": "shared_sql"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b8eaad53-470d-40c0-affb-7c5f9f28c41d"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql": {
+          "value": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b8eaad53-470d-40c0-affb-7c5f9f28c41d"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FixMinQtyPref_FortisAlberta"
+    ],
+    "dependencies": {
+      "shared_sql": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+    },
+    "dependents": [],
+    "id": "2caa0ffa-db7f-4415-be82-17822bce97b6"
+  },
+  "3d619e50-2b89-43ac-a1e2-c20992b2f7f4": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/d0db76faeba94fbdba29da4c40ff5155",
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-16.canadacentral.logic.azure.com:443/workflows/1fefaed0f3ac45f89978406aa61c20da/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=cD8j_SuaMn-vpmHnDULG06BG3BakmadgKPe_fQLwZC8",
+      "workflowEndpoint": "/subscriptions/ac07fa44-4742-482d-aa28-c00945932935/resourceGroups/27FA3375BC434DE99C55D12DA0C8875A-3DFD892EA8CB4540AE68536B459FEA18/providers/Microsoft.Logic/workflows/dfe98a0a-902f-4672-9ada-d82b7c8af609",
+      "workflowName": "dfe98a0a-902f-4672-9ada-d82b7c8af609",
+      "workflowPath": "/subscriptions/ac07fa44-4742-482d-aa28-c00945932935/resourceGroups/27FA3375BC434DE99C55D12DA0C8875A-3DFD892EA8CB4540AE68536B459FEA18/providers/Microsoft.Logic/workflows/dfe98a0a-902f-4672-9ada-d82b7c8af609"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "14dbac59-488f-457a-a845-941f2978f5fc": {
+          "value": "shared_sql"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "dfe98a0a-902f-4672-9ada-d82b7c8af609"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql": {
+          "value": "14dbac59-488f-457a-a845-941f2978f5fc"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "dfe98a0a-902f-4672-9ada-d82b7c8af609"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FixMinQtyAnyVendor"
+    ],
+    "dependencies": {
+      "shared_sql": "14dbac59-488f-457a-a845-941f2978f5fc"
+    },
+    "dependents": [],
+    "id": "3d619e50-2b89-43ac-a1e2-c20992b2f7f4"
+  },
+  "4421b7f0-ac15-402d-bd55-6e510a2b69c6": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sql/connections/81011af168604c52beff215cd54aa165",
+    "connectionParameters": {
+      "database": "FPECAPP",
+      "privacySetting": "None",
+      "server": "PECSQL3SRV"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "windowsAuthentication",
+      "displayName": "SQL Server",
+      "gatewayObjectIdHint": "27553c69-677b-4a5a-b785-36e30f83e242",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/sql-special-train/1.0.1593.2976/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "isOnPremiseConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/81011af168604c52beff215cd54aa165"
+    },
+    "datasets": {
+      "default": {
+        "dataSources": {
+          "PJPROJ": {
+            "tableName": "[dbo].[PJPROJ]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "PJPROJ"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4421b7f0-ac15-402d-bd55-6e510a2b69c6"
+  },
+  "64b64449-d472-4083-871d-ab15fbf6ecd9": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/623f9619911e4941b57c753523fcfcac",
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9b8b44b9-10ce-4557-94a5-df8fb9aef13a": {
+          "value": "shared_sql"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ed3ea30a-46d7-4a7a-a1a5-99464c9f6eba"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql": {
+          "value": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ed3ea30a-46d7-4a7a-a1a5-99464c9f6eba"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FixMinQtyPref_Enmax"
+    ],
+    "dependencies": {
+      "shared_sql": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+    },
+    "dependents": [],
+    "id": "64b64449-d472-4083-871d-ab15fbf6ecd9"
+  },
+  "9b8b44b9-10ce-4557-94a5-df8fb9aef13a": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sql/connections/9e25bc34889142e9a43a86ef08386a02",
+    "connectionParameters": {
+      "database": "NewEstimator",
+      "privacySetting": "None",
+      "server": "PECSQL3SRV"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "windowsAuthentication",
+      "displayName": "SQL Server",
+      "gatewayObjectIdHint": "27553c69-677b-4a5a-b785-36e30f83e242",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/sql-special-train/1.0.1593.2976/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "isOnPremiseConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/9e25bc34889142e9a43a86ef08386a02"
+    },
+    "datasets": {
+      "default": {
+        "dataSources": {
+          "ATCO_Table": {
+            "tableName": "[dbo].[ATCO_Table]"
+          },
+          "Contractors": {
+            "tableName": "[dbo].[Contractors]"
+          },
+          "EngResources_1": {
+            "tableName": "[dbo].[EngResources]"
+          },
+          "EPC_table": {
+            "tableName": "[dbo].[EPC_table]"
+          },
+          "Estimates": {
+            "tableName": "[dbo].[Estimates]"
+          },
+          "ExtraCostItems_1": {
+            "tableName": "[dbo].[ExtraCostItems]"
+          },
+          "LabourUnits": {
+            "tableName": "[dbo].[LabourUnits]"
+          },
+          "LabourUnitsDetails": {
+            "tableName": "[dbo].[LabourUnitsDetails]"
+          },
+          "Manufacturers": {
+            "tableName": "[dbo].[Manufacturers]"
+          },
+          "MarkUp_ContingencyTable": {
+            "tableName": "[dbo].[MarkUp_ContingencyTable]"
+          },
+          "MasterMaterial_PreferredVendor_List": {
+            "tableName": "[dbo].[MasterMaterial_PreferredVendor_List]"
+          },
+          "Permits": {
+            "tableName": "[dbo].[Permits]"
+          },
+          "ProjectEstEngResources": {
+            "tableName": "[dbo].[ProjectEstEngResources]"
+          },
+          "ProjectEstExtraCostItems": {
+            "tableName": "[dbo].[ProjectEstExtraCostItems]"
+          },
+          "ProjectEstLabour": {
+            "tableName": "[dbo].[ProjectEstLabour]"
+          },
+          "ProjectEstMaterials": {
+            "tableName": "[dbo].[ProjectEstMaterials]"
+          },
+          "ProjectEstPermits": {
+            "tableName": "[dbo].[ProjectEstPermits]"
+          },
+          "ProjectEstShawCosts": {
+            "tableName": "[dbo].[ProjectEstShawCosts]"
+          },
+          "ProjectEstStructures": {
+            "tableName": "[dbo].[ProjectEstStructures]"
+          },
+          "ProjEstEPCTable": {
+            "tableName": "[dbo].[ProjEstEPCTable]"
+          },
+          "Shaw_Table": {
+            "tableName": "[dbo].[Shaw_Table]"
+          },
+          "StructuresDetails": {
+            "tableName": "[dbo].[StructuresDetails]"
+          },
+          "StructuresLabourDetails": {
+            "tableName": "[dbo].[StructuresLabourDetails]"
+          },
+          "StructuresMaterialDetails": {
+            "tableName": "[dbo].[StructuresMaterialDetails]"
+          },
+          "SurveyRatesTable": {
+            "tableName": "[dbo].[SurveyRatesTable]"
+          },
+          "Users": {
+            "tableName": "[dbo].[Users]"
+          },
+          "Vendors": {
+            "tableName": "[dbo].[Vendors]"
+          },
+          "VendorSupplies": {
+            "tableName": "[dbo].[VendorSupplies]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Users",
+      "SurveyRatesTable",
+      "ATCO_Table",
+      "Contractors",
+      "EPC_table",
+      "Manufacturers",
+      "Permits",
+      "MarkUp_ContingencyTable",
+      "Shaw_Table",
+      "StructuresDetails",
+      "StructuresLabourDetails",
+      "EngResources_1",
+      "ExtraCostItems_1",
+      "Estimates",
+      "LabourUnits",
+      "LabourUnitsDetails",
+      "ProjectEstEngResources",
+      "ProjectEstExtraCostItems",
+      "ProjectEstMaterials",
+      "ProjectEstPermits",
+      "ProjectEstShawCosts",
+      "ProjectEstStructures",
+      "ProjEstEPCTable",
+      "Vendors",
+      "ProjectEstLabour",
+      "VendorSupplies",
+      "StructuresMaterialDetails",
+      "MasterMaterial_PreferredVendor_List"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "2caa0ffa-db7f-4415-be82-17822bce97b6",
+      "b7bc32fb-6bbd-476f-aeea-edcf94f44eb4",
+      "64b64449-d472-4083-871d-ab15fbf6ecd9"
+    ],
+    "id": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+  },
+  "b38fe9c1-973c-48d0-bd4b-302fc68cd91d": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/54e1afa6-f85b-4da5-81f1-e119a148f39a",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-03.canadacentral.logic.azure.com:443/workflows/4876a486a3424de7b7ffbf5bf440c0c5/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=QK4vEvzsPBwEmnyr8hxyoiNKt-i8lJsogZdnwfrEADw",
+      "workflowEndpoint": "/subscriptions/ac07fa44-4742-482d-aa28-c00945932935/resourceGroups/27fa3375bc434de99c55d12da0c8875a-3dfd892ea8cb4540ae68536b459fea18/providers/Microsoft.Logic/workflows/54e1afa6-f85b-4da5-81f1-e119a148f39a",
+      "workflowName": "54e1afa6-f85b-4da5-81f1-e119a148f39a",
+      "workflowPath": "/subscriptions/ac07fa44-4742-482d-aa28-c00945932935/resourceGroups/27fa3375bc434de99c55d12da0c8875a-3dfd892ea8cb4540ae68536b459fea18/providers/Microsoft.Logic/workflows/54e1afa6-f85b-4da5-81f1-e119a148f39a"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "132cc622-297c-4dd8-a5b9-80a288bd8735": {
+          "value": "shared_sql_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "54e1afa6-f85b-4da5-81f1-e119a148f39a"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "132cc622-297c-4dd8-a5b9-80a288bd8735"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "54e1afa6-f85b-4da5-81f1-e119a148f39a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FixMinQtyPrefVendor"
+    ],
+    "dependencies": {
+      "shared_sql_1": "132cc622-297c-4dd8-a5b9-80a288bd8735"
+    },
+    "dependents": [],
+    "id": "b38fe9c1-973c-48d0-bd4b-302fc68cd91d"
+  },
+  "b7bc32fb-6bbd-476f-aeea-edcf94f44eb4": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/4b105498-91f2-4457-8399-bc4e0424e251",
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9b8b44b9-10ce-4557-94a5-df8fb9aef13a": {
+          "value": "shared_sql"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "4b105498-91f2-4457-8399-bc4e0424e251"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql": {
+          "value": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "4b105498-91f2-4457-8399-bc4e0424e251"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FixMinQtyPref_CoC"
+    ],
+    "dependencies": {
+      "shared_sql": "9b8b44b9-10ce-4557-94a5-df8fb9aef13a"
+    },
+    "dependents": [],
+    "id": "b7bc32fb-6bbd-476f-aeea-edcf94f44eb4"
+  }
+}
